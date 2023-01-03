@@ -1,7 +1,5 @@
 #!/usr/bin/python3
 
-
-
-[print("{}".format(chr(x)), end="")
-
-            for x in range(97, 123) if x != ord("q") and x != ord("e")]
+def print_last_digit(number):
+    print(abs(number) % 10, end='')
+    return (abs(number) % 10)
