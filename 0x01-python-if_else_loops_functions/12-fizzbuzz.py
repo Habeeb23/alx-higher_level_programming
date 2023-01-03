@@ -1,7 +1,11 @@
 #!/usr/bin/python3
 
+def fizzbuzz():
 
+    [print("FizzBuzz", end=" ") if not (x % 3) and not (x % 5)
 
-[print("{}".format(chr(x)), end="")
+        else print("Fizz", end=" ") if not (x % 3)
 
-            for x in range(97, 123) if x != ord("q") and x != ord("e")]
+        else print("Buzz", end=" ") if not (x % 5)
+
+        else print(x, end=" ") for x in range(1, 101)]
