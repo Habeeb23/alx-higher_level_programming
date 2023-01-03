@@ -1,7 +1,3 @@
 #!/usr/bin/python3
 
-
-
-[print("{}".format(chr(x)), end="")
-
-            for x in range(97, 123) if x != ord("q") and x != ord("e")]
+[print("{0} = 0x{0:x}".format(x)) for x in range(0, 99)]
