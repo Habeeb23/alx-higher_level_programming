@@ -1,7 +1,13 @@
 #!/usr/bin/python3
 
+def magic_calculation(a, b, c):
 
+    if a < b:
 
-[print("{}".format(chr(x)), end="")
+        return c
 
-            for x in range(97, 123) if x != ord("q") and x != ord("e")]
+    if c > b:
+
+        return a + b
+
+    return (a * b) - c
