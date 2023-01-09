@@ -1,9 +1,6 @@
 #!/usr/bin/python3
 
-
-
-def print_list_integer(my_list=[]):
-
-        for elem in my_list:
-
-                    print("{:d}".format(elem))
+def delete_at(my_list=[], idx=0):
+    if idx >= 0 and idx < len(my_list):
+        del my_list[idx]
+    return my_list
