@@ -1,9 +1,5 @@
 #!/usr/bin/python3
 
-
-
-def print_list_integer(my_list=[]):
-
-        for elem in my_list:
-
-                    print("{:d}".format(elem))
+def no_c(my_string):
+    ret_str = [var for var in my_string if var.lower() != 'c']
+    return (''.join(ret_str))
