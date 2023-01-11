@@ -1,11 +1,12 @@
-i#!/usr/bin/python3
+#!/usr/bin/python3
 
+def complex_delete(a_dict, value):
 
-
-def square_matrix_simple(matrix=[]):
-
-        if matrix is None:
-
-                    return None
-
-                    return [[x ** 2 for x in row] for row in matrix]
+    if a_dict is None:
+        return None
+    del_key = None
+    keys = tuple(a_dict.keys())
+    for key in keys:
+        if a_dict[key] == value:
+            del a_dict[key]
+    return 
