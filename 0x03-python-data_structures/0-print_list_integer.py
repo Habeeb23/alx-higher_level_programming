@@ -1,5 +1,5 @@
-st_integer(my_list=[]):
+#!/usr/bin/python3
 
-        for elem in my_list:
-
-                    print("{:d}".format(elem))i
+def print_list_integer(my_list=[]):
+    for elem in my_list:
+        print("{:d}".format(elem))

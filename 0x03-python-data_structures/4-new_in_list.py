@@ -1,9 +1,8 @@
 #!/usr/bin/python3
 
-
-
-def print_list_integer(my_list=[]):
-
-        for elem in my_list:
-
-                    print("{:d}".format(elem))
+def new_in_list(my_list, idx, element):
+    copy = my_list[:]
+    if (idx < 0) or (idx > (len(my_list)-1)):
+        return my_list
+    copy[idx] = element
+    return copy

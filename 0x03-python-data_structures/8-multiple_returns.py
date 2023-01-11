@@ -1,9 +1,4 @@
 #!/usr/bin/python3
 
-
-
-def print_list_integer(my_list=[]):
-
-        for elem in my_list:
-
-                    print("{:d}".format(elem))
+def multiple_returns(var):
+    return(len(var), var[0] if len(var) != 0 else None)
