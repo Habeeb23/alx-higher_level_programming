@@ -1,11 +1,6 @@
 #!/usr/bin/python3
 
-
-
-def square_matrix_simple(matrix=[]):
-
-        if matrix is None:
-
-                    return None
-
-                    return [[x ** 2 for x in row] for row in matrix]
+def uniq_add(my_list=[]):
+    if my_list is None:
+        return None
+    return sum(set(my_list))
