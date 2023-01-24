@@ -1,23 +1,10 @@
-afe_print_list(my_list=[], x=0):
-
-        counter = 0
-
-            for i in range(x):
-
-                        try:
-
-                                        print("{}".format(my_list[i]), end="")
-
-                                                except IndexError:
-
-                                                                break
-
-                                                                    else:
-
-                                                                                    counter += 1
-
-                                                                                        print()
-
-                                                                                            return counter
-
-
+#!/usr/bin/python3
+def safe_print_integer_err(value):
+    import sys
+    try:
+        print("{:d}".format(value))
+    except Exception as i:
+        sys.stderr.write("Exception: {}\n".format(i))
+        return (False)
+    else:
+        return (True)
