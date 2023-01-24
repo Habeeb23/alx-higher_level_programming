@@ -1,11 +1,6 @@
 #!/usr/bin/python3
 
-
-
-def square_matrix_simple(matrix=[]):
-
-        if matrix is None:
-
-                    return None
-
-                    return [[x ** 2 for x in row] for row in matrix]
+def search_replace(my_list, search, replace):
+    if my_list is None:
+        return None
+    return [replace if x == search else x for x in my_list]

@@ -1,11 +1,9 @@
 #!/usr/bin/python3
 
+def weight_average(my_list=[]):
 
-
-def square_matrix_simple(matrix=[]):
-
-        if matrix is None:
-
-                    return None
-
-                    return [[x ** 2 for x in row] for row in matrix]
+    if my_list is None or my_list == []:
+        return 0
+    s_fx = sum(map(lambda x: x[0] * x[1], my_list))
+    s_f = sum(map(lambda y: y[1], my_list))
+    return s_fx / s_f

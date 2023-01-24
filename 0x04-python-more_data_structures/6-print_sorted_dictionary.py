@@ -1,11 +1,5 @@
 #!/usr/bin/python3
 
-
-
-def square_matrix_simple(matrix=[]):
-
-        if matrix is None:
-
-                    return None
-
-                    return [[x ** 2 for x in row] for row in matrix]
+def print_sorted_dictionary(a_dictionary):
+    for keys in sorted(a_dictionary.keys()):
+        print("{:s}: {}".format(keys, a_dictionary[keys]))
