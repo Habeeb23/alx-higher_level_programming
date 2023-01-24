@@ -1,25 +1,13 @@
 #!/usr/bin/python3
-
-def safe_print_list(my_list=[], x=0):
-
-        counter = 0
-
-            for i in range(x):
-
-                        try:
-
-                                        print("{}".format(my_list[i]), end="")
-
-                                                except IndexError:
-
-                                                                break
-
-                                                                    else:
-
-                                                                                    counter += 1
-
-                                                                                        print()
-
-                                                                                            return counter
-
-
+def magic_calculation(a, b):
+    result = 0
+    for i in range(1, 3):
+        try:
+            if (i > a):
+                raise Exception("Too far")
+            else:
+                result += (a ** b) / i
+        except Exception:
+            result = b + a
+            break
+    return (result)
