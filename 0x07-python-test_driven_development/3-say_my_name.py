@@ -1,31 +1,16 @@
 #!/usr/bin/python3
-
-"""Module containing a dummy adder function for testing"""
-
+"""Module containing a function to print first and last name"""
 
 
+def say_my_name(first_name, last_name=""):
+    """ prints first and last name
+        Arguments:
+            @first_name: first name to be printed
+            @second_name: last_name to be printed
+    """
 
-
-def add_integer(a, b=98):
-
-        """ adds integers
-
-                Arguments:
-
-                        @a: first integer
-
-                                @b: second integer, defaults to 98 if not given
-
-                                    """
-
-
-
-                                        if type(a) not in [int, float]:
-
-                                                    raise TypeError("a must be an integer")
-
-                                                    if type(b) not in [int, float]:
-
-                                                                raise TypeError("b must be an integer")
-
-                                                                return int(a) + int(b)
+    if type(first_name) is not str:
+        raise TypeError("first_name must be a string")
+    if type(last_name) is not str:
+        raise TypeError("last_name must be a string")
+    print("My name is {} {}".format(first_name, last_name))
