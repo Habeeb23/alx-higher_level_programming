@@ -1,30 +1,13 @@
-
-dule containing a dummy adder function for testing"""
-
-
-
+#!/usr/bin/python3
+"""Defines a matrix multiplication function using NumPy."""
+import numpy as np
 
 
-def add_integer(a, b=98):
+def lazy_matrix_mul(m_a, m_b):
+    """Return the multiplication of two matrices.
+    Args:
+        m_a (list of lists of ints/floats): The first matrix.
+        m_b (list of lists of ints/floats): The second matrix.
+    """
 
-        """ adds integers
-
-                Arguments:
-
-                            @a: first integer
-
-                                    @b: second integer, defaults to 98 if not given
-
-                                        """
-
-
-
-                                            if type(a) not in [int, float]:
-
-                                                    raise TypeError("a must be an integer")
-
-                                                        if type(b) not in [int, float]:
-
-                                                                raise TypeError("b must be an integer")
-
-                                                                    return int(a) + int(b)
+    return (np.matmul(m_a, m_b))
