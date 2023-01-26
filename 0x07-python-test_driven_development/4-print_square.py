@@ -1,31 +1,20 @@
 #!/usr/bin/python3
-
-"""Module containing a dummy adder function for testing"""
-
+"""Module containing a function that prints a square"""
 
 
+def print_square(size):
+    """ adds integers
+        Arguments:
+            @size: size of the square
+    """
 
-
-def add_integer(a, b=98):
-
-        """ adds integers
-
-                Arguments:
-
-                        @a: first integer
-
-                                @b: second integer, defaults to 98 if not given
-
-                                    """
-
-
-
-                                        if type(a) not in [int, float]:
-
-                                                    raise TypeError("a must be an integer")
-
-                                                    if type(b) not in [int, float]:
-
-                                                                raise TypeError("b must be an integer")
-
-                                                                return int(a) + int(b)
+    if type(size) is not int:
+        raise TypeError("size must be an integer")
+    if (size < 0):
+        raise ValueError("size must be >= 0")
+    if size == 0:
+        return
+    for i in range(size):
+        for j in range(size):
+            print("#", end="")
+        print()
