@@ -1,27 +1,8 @@
 #!/usr/bin/python3
 
-''' Module: 1-my_list
-
-'''
+"""Defines an empty class BaseGeometry."""
 
 
-
-
-
-class MyList(list):
-
-        ''' Represents a MyList
-
-            '''
-
-
-
-                def print_sorted(self):
-
-                            '''
-
-                                    prints the list, but sorted
-
-                                            '''
-
-                                                    print(sorted(self))
+class BaseGeometry:
+    """Represent base geometry."""
+    pass
