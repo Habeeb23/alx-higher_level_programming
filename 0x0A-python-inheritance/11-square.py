@@ -1,27 +1,17 @@
 #!/usr/bin/python3
 
-''' Module: 1-my_list
-
-'''
-
+"""Defines a Rectangle subclass Square."""
+Rectangle = __import__('9-rectangle').Rectangle
 
 
+class Square(Rectangle):
+    """Represent a square."""
 
-
-class MyList(list):
-
-        ''' Represents a MyList
-
-            '''
-
-
-
-                def print_sorted(self):
-
-                            '''
-
-                                    prints the list, but sorted
-
-                                            '''
-
-                                                    print(sorted(self))
+    def __init__(self, size):
+        """Initialize a new square.
+        Args:
+            size (int): The size of the new square.
+        """
+        self.integer_validator("size", size)
+        super().__init__(size, size)
+        self.__size = size
