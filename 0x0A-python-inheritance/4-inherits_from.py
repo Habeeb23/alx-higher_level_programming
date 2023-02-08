@@ -1,27 +1,17 @@
 #!/usr/bin/python3
 
-''' Module: 1-my_list
-
-'''
+"""Defines an inherited class-checking function."""
 
 
-
-
-
-class MyList(list):
-
-        ''' Represents a MyList
-
-            '''
-
-
-
-                def print_sorted(self):
-
-                            '''
-
-                                    prints the list, but sorted
-
-                                            '''
-
-                                                    print(sorted(self))
+def inherits_from(obj, a_class):
+    """Checks if an object is an inherited instance of a class.
+    Args:
+        obj (any): The object to check.
+        a_class (type): The class to match the type of obj to.
+    Returns:
+        If obj is an inherited instance of a_class - True.
+        Otherwise - False.
+    """
+    if issubclass(type(obj), a_class) and type(obj) != a_class:
+        return True
+    return False
